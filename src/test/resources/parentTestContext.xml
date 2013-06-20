@@ -11,14 +11,14 @@
 
     <tx:annotation-driven/>
 
-    <jdbc:embedded-database id="dataSource" />
+    <jdbc:embedded-database type="H2" id="dataSource" />
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:persistenceProviderClass="org.hibernate.ejb.HibernatePersistence" p:dataSource-ref="dataSource"
           p:packagesToScan="ru.kacit.demo.test.server.model">
         <property name="jpaPropertyMap">
             <map>
-                <entry key="hibernate.show_sql" value="true"/>
+                <entry key="hibernate.show_sql" value="false"/>
                 <entry key="hibernate.format_sql" value="true"/>
                 <entry key="hibernate.hbm2ddl.auto" value="create"/>
             </map>

@@ -11,11 +11,11 @@
     </appender>
 
     <logger name="org.springframework">
-        <level value="debug" />
+        <level value="warn" />
     </logger>
 
     <logger name="org.hibernate">
-        <level value="debug" />
+        <level value="warn" />
     </logger>
 
     <logger name="ru.kacit">
