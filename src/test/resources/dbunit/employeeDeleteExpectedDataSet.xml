@@ -1,0 +1,30 @@
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<dataset>
+    <table name="office">
+        <column>id</column>
+        <column>name</column>
+        <row>
+            <value>1</value>
+            <value>Boston Office</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>Chicago Office</value>
+        </row>
+    </table>
+    <table name="employee">
+        <column>id</column>
+        <column>name</column>
+        <column>employees_id</column>
+        <row>
+            <value>2</value>
+            <value>Dale</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>Gadget</value>
+            <value>2</value>
+        </row>
+    </table>
+</dataset>
